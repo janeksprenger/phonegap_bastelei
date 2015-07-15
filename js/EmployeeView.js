@@ -19,7 +19,7 @@ var EmployeeView = function (employee) {
     this.addToContacts = function(event) {
         event.preventDefault();
         console.log('addToContacts');
-        // geht leider nicht auf dem Smartphone, navigator.contacts ist false...
+
         if (!navigator.contacts) {
             app.showAlert("Contacts API not supported", "Error");
             return;
